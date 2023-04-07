@@ -1,0 +1,84 @@
+.aside {
+    width: 180px;
+    float: left;
+    padding-top: 7px;
+}
+
+.nav__list-item {
+    margin-bottom: 30px;
+}
+
+.nav__link {
+    font-family: 'Gotham Pro';
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ec1e79;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+}
+
+.nav__link:hover {
+    color: black;
+}
+
+.nav__title {
+    margin-left: 13px;
+}
+
+.nav__link--active {
+    color: black;
+    cursor: default;
+}
+
+.nav__icon, .nav__title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav__icon {
+    background-image: url(../../img/icons/mysprite.png);
+    background-repeat: no-repeat;
+}
+
+.nav__icon--main {
+    width: 17px;
+    height: 15px;
+    background-position: 0px 0px;
+}
+
+.nav__link--active .nav__icon--main {
+    background-position: 0px -40px;
+}
+
+.nav__link:hover .nav__icon--main {
+    background-position: 0px -40px;
+}
+
+.nav__icon--reviews {
+    width: 20px;
+    height: 18px;
+    background-position: -100px 0px;
+}
+
+.nav__link--active .nav__icon--reviews {
+    background-position: -100px -40px;
+}
+
+.nav__link:hover .nav__icon--reviews {
+    background-position: -100px -40px;
+}
+
+.nav__icon--tariffs {
+    width: 19px;
+    height: 16px;
+    background-position: -200px 0px;
+}
+
+.nav__link--active .nav__icon--tariffs {
+    background-position: -200px -40px;
+}
+
+.nav__link:hover .nav__icon--tariffs {
+    background-position: -200px -40px;
+}

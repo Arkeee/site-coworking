@@ -1,0 +1,15 @@
+/* layout */
+@import url(./layout/normalize.css);
+@import url(./layout/fonts.css);
+@import url(./layout/base.css);
+
+/* blocks */
+@import url(./blocks/header.css);
+@import url(./blocks/nav.css);
+@import url(./blocks/footer.css);
+
+/* pages */
+@import url(./pages/intro.css);
+@import url(./pages/index.css);
+@import url(./pages/reviews.css);
+@import url(./pages/prices.css);

@@ -1,0 +1,287 @@
+.breadscrumbs {
+    margin-bottom: 28px;
+}
+
+.breadscrumbs__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.breadscrumbs__item::after {
+    content: "/";
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.breadscrumbs__item:last-child::after {
+    display: none;
+}
+
+.breadscrumbs__item-link {
+    font-family: "Gotham Pro";
+    font-size: 14px;
+    color: #ec1e79;
+    opacity: 0.8;
+    text-decoration: underline;
+    transition: .3s;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.breadscrumbs__item-link--active {
+    color: #4e4c4c;
+    text-decoration: none;
+    cursor: default;
+}
+
+.breadscrumbs__item-link:hover {
+    text-decoration: none;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.reviews {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+}
+
+.reviews__item {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f5f5f5;
+    display: block;
+}
+
+.reviews__img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    float: left;
+    position: relative;
+    margin-right: 20px;
+}
+
+.reviews__img-photo {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.reviews__img-photo--non {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0.3;
+}
+
+.reviews__text {
+    float: right;
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    width: 740px;
+}
+
+.reviews__date {
+   color: #656464;
+   font-weight: 300;
+   font-size: 14px;
+   line-height: 21px;
+   font-family: "Roboto Light";
+}
+
+.reviews__name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+    margin-bottom: 15px;
+}
+
+.reviews__desc {
+    line-height: 30px;
+}
+
+.reviews__item:last-child {
+    border-bottom: none;
+    margin-bottom: 47px;
+    padding-bottom: 0px;
+}
+
+.discount {
+    display: block;
+    background-image: url(http://kursgsg.ru/coworking/comments/img/disount-bg.jpg);
+    margin: 0 auto;
+    width: 1100px;
+    text-align: justify;
+    margin-bottom: 57px;
+}
+
+.discount__text {
+    font-family: "Gotham Pro";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 48px 240px;
+    color: #ffffff;
+}
+
+.discount__text-line {
+    color: #ec1e79;
+    font-weight: bold;
+}
+
+.section-form {
+    margin-bottom: 50px;
+}
+
+.form {
+    margin: 0 auto;
+    max-width: 700px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 50px 70px;
+    color: #221f1f;
+}
+
+.form .title {
+    margin-bottom: 30px;
+}
+
+.form__row {
+    display: inline-block;
+    font-family: "Gotham Pro";
+    font-weight: 300;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form__column--left {
+    float: left;
+    width: 50%;
+}
+
+.form__column--right {
+    float: right;
+    width: 48%;
+    margin-left: 2%;
+}
+
+.form__field-title {
+    margin-bottom: 14px;
+    display: block;
+}
+
+.form__big-text {
+    overflow: auto;
+    resize: none;
+    width: 560px;
+    height: 90px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Gotham Pro";
+    color:black;
+    border: 1px solid white;
+    margin-top: 12px;
+    padding: 8px 11px;
+    display: block;
+}
+
+.form__input {
+    margin-top: 12px;
+    padding-left: 13px;
+    box-sizing: border-box;
+    height: 45px;
+    width: 272px;
+    outline: 0;
+    display: block;
+    border-radius: 3px;
+    border: 1px solid #f5f5f5;
+}
+
+.form__input, .form__big-text {
+    opacity: .65;
+    background-color: #fcfcfc;
+}
+
+.form__input:focus, .form__big-text:focus {
+    border: 1px solid #ec1e79;
+    opacity: 1;
+    background-color: #ffffff;
+}
+
+.form__control-title {
+    margin-bottom: 11px;
+}
+
+.form__control-trigger {
+    margin-right: 22px;
+}
+
+.form__radio {
+    display: none;
+}
+
+.form__radio-fake {
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    position: relative;
+    transition: .3s;
+}
+
+.form__radio:checked + .form__radio-fake::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #c02169;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s;
+}
+
+.form__radio:checked + .form__radio-fake{
+    border: 1px solid #c02169;
+}
+
+.form__radio:checked + .form__radio-fake + .form__trigger-title{
+    color: #c02169;
+    transition: .3s;
+}
+
+.form__button {
+    display: block;
+    text-align: right;
+}
+
+.form__submite {
+    background-color: #27273e;
+    width: 140px;
+    height: 45px;
+    color: #ffffff;
+    font-family: "Gotham Pro", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+}
+
+.form__submite:hover {
+    background-color: #c02169;
+}
